@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | Ezitech Water Bottles</title>
+
+<link rel="stylesheet" href="src/css/style.css">
+
+<script src="src/js/contact.js" defer></script>
+</head>
+<body>
+
+<header>
+<nav aria-label="Main navigation">
+<h2>Ezitech Water Bottles</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="contact.html" aria-current="page">Contact Us</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<section class="contact-section" aria-labelledby="contact-title">
+
+<h1 id="contact-title">Contact Us</h1>
+
+<p>
+Have a question about our water bottles?
+Send us a message. We would love to hear from you!
+</p>
+
+<form id="contactForm" novalidate>
+
+<div class="form-group">
+<label for="name">Full Name</label>
+<input
+type="text"
+id="name"
+name="name"
+autocomplete="name"
+required
+aria-describedby="nameError"
+>
+<span id="nameError" class="error-message"
+aria-live="polite"></span>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address</label>
+<input
+type="email"
+id="email"
+name="email"
+autocomplete="email"
+required
+aria-describedby="emailError"
+>
+<span id="emailError" class="error-message"
+aria-live="polite"></span>
+</div>
+
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input
+type="tel"
+id="phone"
+name="phone"
+autocomplete="tel"
+required
+aria-describedby="phoneError"
+>
+<span id="phoneError" class="error-message"
+aria-live="polite"></span>
+</div>
+
+<div class="form-group">
+<label for="message">Your Message</label>
+<textarea
+id="message"
+name="message"
+rows="5"
+required
+aria-describedby="messageError"
+></textarea>
+<span id="messageError" class="error-message"
+aria-live="polite"></span>
+</div>
+
+<button type="submit">Send Message</button>
+
+<p id="formStatus" role="status" aria-live="polite"></p>
+
+</form>
+</section>
+</main>
+
+<footer>
+<p>&copy; 2026 Ezitech Water Bottles. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
